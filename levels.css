@@ -1,0 +1,67 @@
+section {
+  display: grid;
+}
+
+.peas {
+  grid-area: peas;
+}
+
+.onions {
+  grid-area: onion;
+}
+
+.tomatoes {
+  grid-area: tomato;
+}
+
+.lettuce {
+  grid-area: lettuce;
+}
+
+.carrots {
+  grid-area: carrot;
+}
+
+section#level-1 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "peas onion"
+    "tomato lettuce"
+    "carrot .";
+}
+
+section#level-2 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "peas peas"
+    "onion tomato"
+    "lettuce carrot";
+}
+
+section#level-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "peas onion onion"
+    "tomato tomato lettuce"
+    "carrot carrot carrot";
+}
+
+section#level-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "peas peas onion carrot"
+    "tomato lettuce onion carrot";
+}
+
+section#level-5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "carrot . onion . lettuce"
+    "carrot . onion peas peas"
+    "carrot tomato tomato tomato .";
+}
